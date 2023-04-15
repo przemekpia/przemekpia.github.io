@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+
+.navbar-links li button {
+    text-decoration: none;
+    background-color: #333;
+    padding: 1rem;
+    display: block;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-links li button:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* The hero image */
+.hero-image {
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tło.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+}
+
+#EnglandPIC {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("England.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+}
+
+#PolandPIC {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Poland.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+}
+
+.Main{
+    width: 100%;
+    height: 95%;
+}
+.England{
+    width: 100%;
+    height: 100%;
+}
+.Poland{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 6rem;
+}
+
+.hero-text p {
+    font-size: 2rem;
+}
+
+.container {
+    width: 50%;
+    min-height: 30vh;
+    width: 45vh;
+    padding: 45px;
+    border: solid 5px white;
+    border-radius: 50%;
+    box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("Boisko.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.TESTY{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 25px;
+    gap: 35px;
+    text-align: center;
+}
+
+.England{
+    display: none;
+}
+
+.Poland{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 1050px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
