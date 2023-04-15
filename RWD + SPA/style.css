@@ -101,6 +101,38 @@ html {
     height: 50%;
 }
 
+#SpainPIC {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Spain.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+}
+
+#NetherlandsPIC {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Netherlands.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+}
+
+#ArgentinaPIC {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Argentina.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+}
+
+#BrazilPIC {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Brazil.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+}
+
 .Main{
     width: 100%;
     height: 95%;
@@ -110,6 +142,22 @@ html {
     height: 100%;
 }
 .Poland{
+    width: 100%;
+    height: 100%;
+}
+.Spain{
+    width: 100%;
+    height: 100%;
+}
+.Netherlands{
+    width: 100%;
+    height: 100%;
+}
+.Argentina{
+    width: 100%;
+    height: 100%;
+}
+.Brazil{
     width: 100%;
     height: 100%;
 }
@@ -164,6 +212,22 @@ html {
 }
 
 .Poland{
+    display: none;
+}
+
+.Spain{
+    display: none;
+}
+
+.Netherlands{
+    display: none;
+}
+
+.Argentina{
+    display: none;
+}
+
+.Brazil{
     display: none;
 }
 
