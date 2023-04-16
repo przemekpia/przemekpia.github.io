@@ -1,6 +1,5 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
+const toggleButton = document.getElementsByClassName('fa fa-bars')[0]
+const navbarLinks = document.getElementsByClassName('main-nav')[0]
 
 const MainSite = document.getElementsByClassName('StronaGłówna')[0]
 const Anglia = document.getElementsByClassName('Anglia')[0]

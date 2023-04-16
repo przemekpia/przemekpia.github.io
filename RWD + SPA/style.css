@@ -12,61 +12,6 @@ html {
     height: 100%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-}
-
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
-
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-
-.navbar-links li button {
-    text-decoration: none;
-    background-color: #333;
-    padding: 1rem;
-    display: block;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.navbar-links li button:hover {
-    background-color: #555;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
 
 /* The hero image */
 .hero-image {
@@ -82,7 +27,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tło.jpg");
 
     /* Set a specific height */
-    height: 100%;
+    height: 110%;
 }
 
 #EnglandPIC {
@@ -90,7 +35,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("England.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 70vh;
 }
 
 #PolandPIC {
@@ -98,7 +43,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Poland.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 70vh;
 }
 
 #SpainPIC {
@@ -106,7 +51,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Spain.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 70vh;
 }
 
 #NetherlandsPIC {
@@ -114,7 +59,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Netherlands.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 70vh;
 }
 
 #ArgentinaPIC {
@@ -122,7 +67,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Argentina.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 70vh;
 }
 
 #BrazilPIC {
@@ -130,37 +75,51 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Brazil.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 70vh;
 }
 
-.Main{
+.Main {
     width: 100%;
     height: 95%;
 }
-.England{
+
+.England {
     width: 100%;
     height: 100%;
+    display: none;
 }
-.Poland{
+
+.Poland {
     width: 100%;
     height: 100%;
+    display: none;
 }
-.Spain{
+
+.Spain {
     width: 100%;
     height: 100%;
+    display: none;
 }
-.Netherlands{
+
+.Netherlands {
     width: 100%;
     height: 100%;
+    display: none;
 }
-.Argentina{
+
+.Argentina {
     width: 100%;
     height: 100%;
+    display: none;
 }
-.Brazil{
+
+.Brazil {
     width: 100%;
     height: 100%;
+    display: none;
 }
+
+
 
 
 /* Place text in the middle of the image */
@@ -174,98 +133,207 @@ html {
 }
 
 .hero-text h1 {
-    font-size: 6rem;
+    font-size: 10rem;
 }
 
 .hero-text p {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .container {
-    width: 50%;
-    min-height: 30vh;
-    width: 45vh;
-    padding: 45px;
+    height: auto;
+    width: 30vw;
+    padding: 70px;
     border: solid 5px white;
     border-radius: 50%;
     box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Boisko.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
-    vertical-align: middle;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.TESTY{
+.container h1{
+    font-size: 5vh;
+}
+.container p{
+    font-size: 2vh;
+}
+
+
+.TESTY {
     display: flex;
     width: 100%;
     background-color: black;
     color: white;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     padding: 25px;
     gap: 35px;
     text-align: center;
 }
 
-.England{
+
+
+#header {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.menu {
+    width: 86%;
+    margin: 0 auto;
+}
+
+#header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {}
+
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+}
+
+.main-nav ul li {
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav li button {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 1rem;
+    display: block;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.main-nav li button:hover {
+    background-color: #555;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: white;
+}
+
+.menu .icon {
     display: none;
 }
 
-.Poland{
-    display: none;
-}
-
-.Spain{
-    display: none;
-}
-
-.Netherlands{
-    display: none;
-}
-
-.Argentina{
-    display: none;
-}
-
-.Brazil{
-    display: none;
-}
-
-
-
-
-
-@media (max-width: 1050px) {
-    .toggle-button {
-        display: flex;
+@media (max-width: 1455px) {
+    
+    .menu a.icon {
+        display: block;
+        color: white;
+        font-size: 25px;
     }
 
-    .navbar-links {
+    .main-nav {
         display: none;
         width: 100%;
     }
 
-    .navbar {
+    .menu {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .navbar-links ul {
+    .main-nav ul {
         flex-direction: column;
         width: 100%;
-    }
-
-    .navbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
         display: flex;
     }
 
+    .main-nav nav {
+        width: 100%;
+    }
+
+    .main-nav li {
+        text-align: center;
+    }
+
+    .main-nav li a {
+        padding: .5rem 1rem;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .container{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .container{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+    }
+
+    .container{
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .brand-title {
+        font-size: 1.1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+    }
+
+
+    
 }

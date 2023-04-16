@@ -3,31 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page Aplication</title>
     <link rel="stylesheet" href="style.css">
     <script src="Function.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="brand-title">Magiczna Strona Przemysława Piasko</div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><button type="button" class="StronaGłówna">Strona Główna</button></li>
-                <li><button type="button" class="Anglia">Anglia</button></li>
-                <li><button type="button" class="Polska">Polska</button></li>
-                <li><button type="button" class="Hiszpania">Hiszpania</button></li>
-                <li><button type="button" class="Holandia">Holandia</button></li>
-                <li><button type="button" class="Argentyna">Argentyna</button></li>
-                <li><button type="button" class="Brazylia">Brazylia</button></li>
-            </ul>
+    <header id="header">
+        <div class="menu">
+            <div class="brand-title">Magiczna Strona Przemysława Piasko</div>
+            <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li><button type="button" class="StronaGłówna">Strona Główna</button></li>
+                        <li><button type="button" class="Anglia">Anglia</button></li>
+                        <li><button type="button" class="Polska">Polska</button></li>
+                        <li><button type="button" class="Hiszpania">Hiszpania</button></li>
+                        <li><button type="button" class="Holandia">Holandia</button></li>
+                        <li><button type="button" class="Argentyna">Argentyna</button></li>
+                        <li><button type="button" class="Brazylia">Brazylia</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-    </nav>
+    </header>
 
     <div class="Main">
         <div class="hero-image" id="hero-image">
