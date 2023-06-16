@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.Polish {
+    display: block;
+}
+
+.English {
+    display: none;
+}
+
+.Spanish {
+    display: none;
+}
+
+/* NAWIGACJA */
+
+#Header {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: white;
+}
+
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+}
+
+.main-nav ul li {
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav li button {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 1rem;
+    display: block;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.main-nav li button:hover {
+    background-color: #555;
+}
+
+.main .icon {
+    display: none;
+}
+
+
+
+
+.hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+}
+
+#MainPIC {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tło.jpg");
+    height: 100vh;
+}
+
+#EnglandPIC {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("England.jpg");
+} 
+
+#PolandPIC {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Poland.jpg");
+}
+
+#SpainPIC {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Spain.jpg");
+}
+
+#NetherlandsPIC {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Netherlands.jpg");
+}
+
+#ArgentinaPIC {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Argentina.jpg");
+}
+
+#BrazilPIC {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Brazil.jpg");
+}
+
+
+
+.England {
+    display: none;
+}
+
+.Poland {
+    display: none;
+}
+
+.Spain {
+    display: none;
+}
+
+.Netherlands {
+    display: none;
+}
+
+.Argentina {
+    display: none;
+}
+
+.Brazil {
+    display: none;
+}
+
+
+
+
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 10rem;
+}
+
+.hero-text p {
+    font-size: 4rem;
+}
+
+
+
+
+.TEAM {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+    gap: 35px;
+    text-align: center;
+}
+
+.PLAYER {
+    height: auto;
+    width: 30vw;
+    padding: 70px;
+    border: solid 5px white;
+    border-radius: 50%;
+    box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Boisko.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.PLAYER h1{
+    font-size: 5vh;
+}
+.PLAYER p{
+    font-size: 2vh;
+}
+
+
+.custom-select {
+    display: flex;
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+}
+.custom-select select {
+    display: block;
+    width: 10vw;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    color: #fff;
+} 
+  
+.custom-select .selector-options li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+}
+  
+@media (max-width: 1455px) {
+    
+    
+    .main a.icon {
+        display: block;
+        color: white;
+        font-size: 25px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+    }
+
+    .main-nav nav {
+        width: 100%;
+    }
+
+    .main-nav li {
+        text-align: center;
+    }
+
+    .main-nav li a {
+        padding: .5rem 1rem;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .PLAYER{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .PLAYER{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .PLAYER{
+        width: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+    }
+
+    .PLAYER{
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .brand-title {
+        font-size: 1.1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+    }
+
+
+    
+}
