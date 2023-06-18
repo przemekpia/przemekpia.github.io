@@ -63,6 +63,10 @@ const languageSelect3 = document.getElementById('languageSelect3');
 
 var activelanguage = 0
 var activesite = 0
+const tab1 = [MainSiteContent1, EnglandContent1, PolandContent1, SpainContent1, NetherlandsContent1, ArgentinaContent1, BrazilContent1];
+const tab2 = [MainSiteContent2, EnglandContent2, PolandContent2, SpainContent2, NetherlandsContent2, ArgentinaContent2, BrazilContent2];
+const tab3 = [MainSiteContent3, EnglandContent3, PolandContent3, SpainContent3, NetherlandsContent3, ArgentinaContent3, BrazilContent3];
+const tab4 = [PolishVersion, EnglishVersion, SpanishVersion];
 
 toggleButton.addEventListener('click', ()=>{
     navbarLinks.classList.toggle('active')
@@ -105,239 +109,170 @@ languageSelect3.addEventListener('change', (event) => {
 function ChangePolish() {
     languageSelect1.selectedIndex = 0;
     activelanguage = 0;
-    PolishVersion.style.display = "block"
-    EnglishVersion.style.display = "none"
-    SpanishVersion.style.display = "none"
+    ChangeLanguage()
+    ChangeSite();
 }
 
 function ChangeEnglish() {
     languageSelect2.selectedIndex = 1;
     activelanguage = 1;
-    PolishVersion.style.display = "none"
-    EnglishVersion.style.display = "block"
-    SpanishVersion.style.display = "none"
+    ChangeLanguage()
+    ChangeSite();
 }
 
 function ChangeSpanish() {
     languageSelect3.selectedIndex = 2;
     activelanguage = 2;
-    PolishVersion.style.display = "none";
-    EnglishVersion.style.display = "none";
-    SpanishVersion.style.display = "block";
+    ChangeLanguage()
+    ChangeSite();
+}
+
+function ChangeLanguage() {
+    tab4.forEach((element,index) => {
+        if (index == activelanguage) {
+            element.style.display = "block"
+          } else {
+            element.style.display = "none"
+          }
+        });
+}
+
+
+function ChangeSite() {
+    if (activelanguage == 0) {
+        tab1.forEach((element,index) => {
+            if (index == activesite) {
+                element.style.display = "block"
+              } else {
+                element.style.display = "none"
+              }
+        });
+      } else if (activelanguage == 1) {
+        tab2.forEach((element,index) => {
+            if (index == activesite) {
+                element.style.display = "block"
+              } else {
+                element.style.display = "none"
+              }
+        });
+      } else{
+        tab3.forEach((element,index) => {
+            if (index == activesite) {
+                element.style.display = "block"
+              } else {
+                element.style.display = "none"
+              }
+        });
+      }
+    
 }
 
 
 MainSite1.addEventListener('click', ()=>{
-    MainSiteContent1.style.display = "block"
-    EnglandContent1.style.display = "none"
-    PolandContent1.style.display = "none"
-    SpainContent1.style.display = "none"
-    NetherlandsContent1.style.display = "none"
-    ArgentinaContent1.style.display = "none"
-    BrazilContent1.style.display = "none"
-
+    activesite = 0;
+    ChangeSite();
+    
 })
 
 Anglia1.addEventListener('click', ()=>{
-    MainSiteContent1.style.display = "none"
-    EnglandContent1.style.display = "block"
-    PolandContent1.style.display = "none"
-    SpainContent1.style.display = "none"
-    NetherlandsContent1.style.display = "none"
-    ArgentinaContent1.style.display = "none"
-    BrazilContent1.style.display = "none"
+    activesite = 1;
+    ChangeSite();
 })
 
 Polska1.addEventListener('click', ()=>{
-    MainSiteContent1.style.display = "none"
-    EnglandContent1.style.display = "none"
-    PolandContent1.style.display = "block"
-    SpainContent1.style.display = "none"
-    NetherlandsContent1.style.display = "none"
-    ArgentinaContent1.style.display = "none"
-    BrazilContent1.style.display = "none"
+    activesite = 2;
+    ChangeSite();
 })
 
 Hiszpania1.addEventListener('click', ()=>{
-    MainSiteContent1.style.display = "none"
-    EnglandContent1.style.display = "none"
-    PolandContent1.style.display = "none"
-    SpainContent1.style.display = "block"
-    NetherlandsContent1.style.display = "none"
-    ArgentinaContent1.style.display = "none"
-    BrazilContent1.style.display = "none"
+    activesite = 3;
+    ChangeSite();
 })
 
 Holandia1.addEventListener('click', ()=>{
-    MainSiteContent1.style.display = "none"
-    EnglandContent1.style.display = "none"
-    PolandContent1.style.display = "none"
-    SpainContent1.style.display = "none"
-    NetherlandsContent1.style.display = "block"
-    ArgentinaContent1.style.display = "none"
-    BrazilContent1.style.display = "none"
+    activesite = 4;
+    ChangeSite();
 })
 
 Argentyna1.addEventListener('click', ()=>{
-    MainSiteContent1.style.display = "none"
-    EnglandContent1.style.display = "none"
-    PolandContent1.style.display = "none"
-    SpainContent1.style.display = "none"
-    NetherlandsContent1.style.display = "none"
-    ArgentinaContent1.style.display = "block"
-    BrazilContent1.style.display = "none"
+    activesite = 5;
+    ChangeSite();
 })
 
 Brazylia1.addEventListener('click', ()=>{
-    MainSiteContent1.style.display = "none"
-    EnglandContent1.style.display = "none"
-    PolandContent1.style.display = "none"
-    SpainContent1.style.display = "none"
-    NetherlandsContent1.style.display = "none"
-    ArgentinaContent1.style.display = "none"
-    BrazilContent1.style.display = "block"
+    activesite = 6;
+    ChangeSite();
 })
 
 
 MainSite2.addEventListener('click', ()=>{
-    MainSiteContent2.style.display = "block"
-    EnglandContent2.style.display = "none"
-    PolandContent2.style.display = "none"
-    SpainContent2.style.display = "none"
-    NetherlandsContent2.style.display = "none"
-    ArgentinaContent2.style.display = "none"
-    BrazilContent2.style.display = "none"
-
+    activesite = 0;
+    ChangeSite();
 })
 
 Anglia2.addEventListener('click', ()=>{
-    MainSiteContent2.style.display = "none"
-    EnglandContent2.style.display = "block"
-    PolandContent2.style.display = "none"
-    SpainContent2.style.display = "none"
-    NetherlandsContent2.style.display = "none"
-    ArgentinaContent2.style.display = "none"
-    BrazilContent2.style.display = "none"
+    activesite = 1;
+    ChangeSite();
 })
 
 Polska2.addEventListener('click', ()=>{
-    MainSiteContent2.style.display = "none"
-    EnglandContent2.style.display = "none"
-    PolandContent2.style.display = "block"
-    SpainContent2.style.display = "none"
-    NetherlandsContent2.style.display = "none"
-    ArgentinaContent2.style.display = "none"
-    BrazilContent2.style.display = "none"
+    activesite = 2;
+    ChangeSite();
 })
 
 Hiszpania2.addEventListener('click', ()=>{
-    MainSiteContent2.style.display = "none"
-    EnglandContent2.style.display = "none"
-    PolandContent2.style.display = "none"
-    SpainContent2.style.display = "block"
-    NetherlandsContent2.style.display = "none"
-    ArgentinaContent2.style.display = "none"
-    BrazilContent2.style.display = "none"
+    activesite = 3;
+    ChangeSite();
 })
 
 Holandia2.addEventListener('click', ()=>{
-    MainSiteContent2.style.display = "none"
-    EnglandContent2.style.display = "none"
-    PolandContent2.style.display = "none"
-    SpainContent2.style.display = "none"
-    NetherlandsContent2.style.display = "block"
-    ArgentinaContent2.style.display = "none"
-    BrazilContent2.style.display = "none"
+    activesite = 4;
+    ChangeSite();
 })
 
 Argentyna2.addEventListener('click', ()=>{
-    MainSiteContent2.style.display = "none"
-    EnglandContent2.style.display = "none"
-    PolandContent2.style.display = "none"
-    SpainContent2.style.display = "none"
-    NetherlandsContent2.style.display = "none"
-    ArgentinaContent2.style.display = "block"
-    BrazilContent2.style.display = "none"
+    activesite = 5;
+    ChangeSite();
 })
 
 Brazylia2.addEventListener('click', ()=>{
-    MainSiteContent2.style.display = "none"
-    EnglandContent2.style.display = "none"
-    PolandContent2.style.display = "none"
-    SpainContent2.style.display = "none"
-    NetherlandsContent2.style.display = "none"
-    ArgentinaContent2.style.display = "none"
-    BrazilContent2.style.display = "block"
+    activesite = 6;
+    ChangeSite();
 })
 
 
 MainSite3.addEventListener('click', ()=>{
-    MainSiteContent3.style.display = "block"
-    EnglandContent3.style.display = "none"
-    PolandContent3.style.display = "none"
-    SpainContent3.style.display = "none"
-    NetherlandsContent3.style.display = "none"
-    ArgentinaContent3.style.display = "none"
-    BrazilContent3.style.display = "none"
+    activesite = 0;
+    ChangeSite();
 
 })
 
 Anglia3.addEventListener('click', ()=>{
-    MainSiteContent3.style.display = "none"
-    EnglandContent3.style.display = "block"
-    PolandContent3.style.display = "none"
-    SpainContent3.style.display = "none"
-    NetherlandsContent3.style.display = "none"
-    ArgentinaContent3.style.display = "none"
-    BrazilContent3.style.display = "none"
+    activesite = 1;
+    ChangeSite();
 })
 
 Polska3.addEventListener('click', ()=>{
-    MainSiteContent3.style.display = "none"
-    EnglandContent3.style.display = "none"
-    PolandContent3.style.display = "block"
-    SpainContent3.style.display = "none"
-    NetherlandsContent3.style.display = "none"
-    ArgentinaContent3.style.display = "none"
-    BrazilContent3.style.display = "none"
+    activesite = 2;
+    ChangeSite();
 })
 
 Hiszpania3.addEventListener('click', ()=>{
-    MainSiteContent3.style.display = "none"
-    EnglandContent3.style.display = "none"
-    PolandContent3.style.display = "none"
-    SpainContent3.style.display = "block"
-    NetherlandsContent3.style.display = "none"
-    ArgentinaContent3.style.display = "none"
-    BrazilContent3.style.display = "none"
+    activesite = 3;
+    ChangeSite();
 })
 
 Holandia3.addEventListener('click', ()=>{
-    MainSiteContent3.style.display = "none"
-    EnglandContent3.style.display = "none"
-    PolandContent3.style.display = "none"
-    SpainContent3.style.display = "none"
-    NetherlandsContent3.style.display = "block"
-    ArgentinaContent3.style.display = "none"
-    BrazilContent3.style.display = "none"
+    activesite = 4;
+    ChangeSite();
 })
 
 Argentyna3.addEventListener('click', ()=>{
-    MainSiteContent3.style.display = "none"
-    EnglandContent3.style.display = "none"
-    PolandContent3.style.display = "none"
-    SpainContent3.style.display = "none"
-    NetherlandsContent3.style.display = "none"
-    ArgentinaContent3.style.display = "block"
-    BrazilContent3.style.display = "none"
+    activesite = 5;
+    ChangeSite();
 })
 
 Brazylia3.addEventListener('click', ()=>{
-    MainSiteContent3.style.display = "none"
-    EnglandContent3.style.display = "none"
-    PolandContent3.style.display = "none"
-    SpainContent3.style.display = "none"
-    NetherlandsContent3.style.display = "none"
-    ArgentinaContent3.style.display = "none"
-    BrazilContent3.style.display = "block"
+    activesite = 6;
+    ChangeSite();
 })
