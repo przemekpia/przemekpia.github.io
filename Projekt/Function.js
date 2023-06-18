@@ -60,6 +60,10 @@ const languageSelect1 = document.getElementById('languageSelect1');
 const languageSelect2 = document.getElementById('languageSelect2');
 const languageSelect3 = document.getElementById('languageSelect3');
 
+
+var activelanguage = 0
+var activesite = 0
+
 toggleButton.addEventListener('click', ()=>{
     navbarLinks.classList.toggle('active')
 })
@@ -100,6 +104,7 @@ languageSelect3.addEventListener('change', (event) => {
 
 function ChangePolish() {
     languageSelect1.selectedIndex = 0;
+    activelanguage = 0;
     PolishVersion.style.display = "block"
     EnglishVersion.style.display = "none"
     SpanishVersion.style.display = "none"
@@ -107,6 +112,7 @@ function ChangePolish() {
 
 function ChangeEnglish() {
     languageSelect2.selectedIndex = 1;
+    activelanguage = 1;
     PolishVersion.style.display = "none"
     EnglishVersion.style.display = "block"
     SpanishVersion.style.display = "none"
@@ -114,6 +120,7 @@ function ChangeEnglish() {
 
 function ChangeSpanish() {
     languageSelect3.selectedIndex = 2;
+    activelanguage = 2;
     PolishVersion.style.display = "none";
     EnglishVersion.style.display = "none";
     SpanishVersion.style.display = "block";
