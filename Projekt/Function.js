@@ -60,6 +60,10 @@ const languageSelect1 = document.getElementById('languageSelect1');
 const languageSelect2 = document.getElementById('languageSelect2');
 const languageSelect3 = document.getElementById('languageSelect3');
 
+const cookiesBannerButton = document.getElementsByClassName("COOKIES")[0];
+const cookiesBanner = document.getElementsByClassName("cookies-eu-banner")[0];
+const paragraph = cookiesBanner.querySelector('p');
+const button = cookiesBanner.querySelector('button');
 
 var activelanguage = 0
 var activesite = 0
@@ -114,6 +118,8 @@ languageSelect3.addEventListener('change', (event) => {
 function ChangePolish() {
     languageSelect1.selectedIndex = 0;
     activelanguage = 0;
+    paragraph.textContent = 'Ta strona nie korzysta z plików cookies i nie przetwarza danych osobowych.'
+    button.textContent = 'Akceptuj'
     ChangeLanguage()
     ChangeSite();
 }
@@ -121,6 +127,8 @@ function ChangePolish() {
 function ChangeEnglish() {
     languageSelect2.selectedIndex = 1;
     activelanguage = 1;
+    paragraph.textContent = 'This website does not use cookies and does not process personal data.'
+    button.textContent = 'Accept'
     ChangeLanguage()
     ChangeSite();
 }
@@ -128,6 +136,8 @@ function ChangeEnglish() {
 function ChangeSpanish() {
     languageSelect3.selectedIndex = 2;
     activelanguage = 2;
+    paragraph.textContent = 'Este sitio web no utiliza cookies y no trata datos personales.'
+    button.textContent = 'Aceptar'
     ChangeLanguage()
     ChangeSite();
 }
@@ -281,3 +291,10 @@ Brazylia3.addEventListener('click', ()=>{
     activesite = 6;
     ChangeSite();
 })
+
+
+cookiesBannerButton.addEventListener('click', ()=>{
+    cookiesBanner.style.display = "none"
+    
+})
+
