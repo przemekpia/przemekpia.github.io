@@ -219,14 +219,21 @@ html {
     float: left;
     margin-left: 35px;
     font-size: 18px;
+    
 }
 .custom-select select {
     display: block;
     min-width:75px;
     width: 6vw;
-    background: rgba(0, 0, 0, 0.8);
+    background: transparent;
     cursor: pointer;
     color: #fff;
+    border: 0;
+} 
+
+.custom-select option {
+    background: rgba(0, 0, 0,0.8);
+    border: none
 } 
   
 .custom-select .selector-options li {
@@ -236,7 +243,7 @@ html {
     padding: 0 15px;
     cursor: pointer;
 }
-  
+
 @media (max-width: 1455px) {
     .ESSA{
         display: flex;

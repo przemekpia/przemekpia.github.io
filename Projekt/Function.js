@@ -1,5 +1,5 @@
-const toggleButton = document.getElementsByClassName('fa fa-bars')[0]
-const navbarLinks = document.getElementsByClassName('main-nav')[0]
+const toggleButton = document.getElementsByClassName('fa fa-bars')
+const navbarLinks = document.getElementsByClassName('main-nav')
 
 const MainSite1 = document.getElementsByClassName('StronaGłówna')[0]
 const Anglia1 = document.getElementsByClassName('Anglia')[0]
@@ -68,9 +68,14 @@ const tab2 = [MainSiteContent2, EnglandContent2, PolandContent2, SpainContent2, 
 const tab3 = [MainSiteContent3, EnglandContent3, PolandContent3, SpainContent3, NetherlandsContent3, ArgentinaContent3, BrazilContent3];
 const tab4 = [PolishVersion, EnglishVersion, SpanishVersion];
 
-toggleButton.addEventListener('click', ()=>{
-    navbarLinks.classList.toggle('active')
-})
+
+Array.from(toggleButton).forEach((element,index) => {
+    element.addEventListener('click', ()=>{
+        Array.from(navbarLinks).forEach(element => {
+            element.classList.toggle('active')
+        })
+    })
+});
 
 
 languageSelect1.addEventListener('change', (event) => {
