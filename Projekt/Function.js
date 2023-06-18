@@ -55,10 +55,7 @@ const PolishVersion = document.getElementsByClassName('Polish')[0]
 const EnglishVersion = document.getElementsByClassName('English')[0]
 const SpanishVersion = document.getElementsByClassName('Spanish')[0]
 
-
-const languageSelect1 = document.getElementById('languageSelect1');
-const languageSelect2 = document.getElementById('languageSelect2');
-const languageSelect3 = document.getElementById('languageSelect3');
+const languageSelect = document.getElementsByName('languageSelect');
 
 const cookiesBannerButton = document.getElementsByClassName("COOKIES")[0];
 const cookiesBanner = document.getElementsByClassName("cookies-eu-banner")[0];
@@ -75,71 +72,59 @@ const tab4 = [PolishVersion, EnglishVersion, SpanishVersion];
 
 Array.from(toggleButton).forEach((element,index) => {
     element.addEventListener('click', ()=>{
-        Array.from(navbarLinks).forEach(element => {
-            element.classList.toggle('active')
+        Array.from(navbarLinks).forEach(param => {
+            param.classList.toggle('active')
         })
     })
 });
 
 
-languageSelect1.addEventListener('change', (event) => {
-    const selectedValue = event.target.value;
-    if (selectedValue === '1') {
+Array.from(languageSelect).forEach(select => {
+    select.addEventListener('change', (event) => {
+      const selectedValue = event.target.value;
+      if (selectedValue === '1') {
         ChangePolish();
-    } else if (selectedValue === '2') {
+      } else if (selectedValue === '2') {
         ChangeEnglish();
-    } else if (selectedValue === '3') {
+      } else if (selectedValue === '3') {
         ChangeSpanish();
-    }
-});
+      }
+    });
+  });
 
-languageSelect2.addEventListener('change', (event) => {
-    const selectedValue = event.target.value;
-    if (selectedValue === '1') {
-        ChangePolish();
-    } else if (selectedValue === '2') {
-        ChangeEnglish();
-    } else if (selectedValue === '3') {
-        ChangeSpanish();
-    }
-});
 
-languageSelect3.addEventListener('change', (event) => {
-    const selectedValue = event.target.value;
-    if (selectedValue === '1') {
-        ChangePolish();
-    } else if (selectedValue === '2') {
-        ChangeEnglish();
-    } else if (selectedValue === '3') {
-        ChangeSpanish();
-    }
-});
 
 function ChangePolish() {
-    languageSelect1.selectedIndex = 0;
     activelanguage = 0;
     paragraph.textContent = 'Ta strona nie korzysta z plików cookies i nie przetwarza danych osobowych.'
     button.textContent = 'Akceptuj'
     ChangeLanguage()
-    ChangeSite();
+    ChangeSite()
+    Array.from(languageSelect).forEach(element => {
+        element.value = 1;
+    });
 }
 
 function ChangeEnglish() {
-    languageSelect2.selectedIndex = 1;
     activelanguage = 1;
     paragraph.textContent = 'This website does not use cookies and does not process personal data.'
     button.textContent = 'Accept'
     ChangeLanguage()
     ChangeSite();
+    Array.from(languageSelect).forEach(element => {
+        element.value  = 2;
+    });
 }
 
 function ChangeSpanish() {
-    languageSelect3.selectedIndex = 2;
     activelanguage = 2;
     paragraph.textContent = 'Este sitio web no utiliza cookies y no trata datos personales.'
     button.textContent = 'Aceptar'
     ChangeLanguage()
     ChangeSite();
+    Array.from(languageSelect).forEach((element,index) => {
+        element.value = 3;
+    });
 }
 
 function ChangeLanguage() {
