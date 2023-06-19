@@ -98,32 +98,32 @@ html {
     height: 70vh;
 }
 
-div[name=MainPIC]{
+div[con=MainPIC]{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tło.jpg");
     height: 125vh;
 }
 
-div[name=EnglandPIC] {
+div[con=EnglandPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("England.jpg");
 } 
 
-div[name=PolandPIC] {
+div[con=PolandPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Poland.jpg");
 }
 
-div[name=SpainPIC] {
+div[con=SpainPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Spain.jpg");
 }
 
-div[name=NetherlandsPIC] {
+div[con=NetherlandsPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Netherlands.jpg");
 }
 
-div[name=ArgentinaPIC] {
+div[con=ArgentinaPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Argentina.jpg");
 }
 
-div[name=BrazilPIC] {
+div[con=BrazilPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Brazil.jpg");
 }
 
