@@ -26,7 +26,7 @@ html {
 
 /* NAWIGACJA */
 
-#Header {
+.Header {
     z-index: 1;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px 0;
@@ -98,32 +98,32 @@ html {
     height: 70vh;
 }
 
-#MainPIC {
+div[name=MainPIC]{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tło.jpg");
     height: 125vh;
 }
 
-#EnglandPIC {
+div[name=EnglandPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("England.jpg");
 } 
 
-#PolandPIC {
+div[name=PolandPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Poland.jpg");
 }
 
-#SpainPIC {
+div[name=SpainPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Spain.jpg");
 }
 
-#NetherlandsPIC {
+div[name=NetherlandsPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Netherlands.jpg");
 }
 
-#ArgentinaPIC {
+div[name=ArgentinaPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Argentina.jpg");
 }
 
-#BrazilPIC {
+div[name=BrazilPIC] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Brazil.jpg");
 }
 
