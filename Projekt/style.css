@@ -98,32 +98,32 @@ html {
     height: 70vh;
 }
 
-div[con=MainPIC]{
+#MainPIC1,#MainPIC2,#MainPIC3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tło.jpg");
     height: 125vh;
 }
 
-div[con=EnglandPIC] {
+#EnglandPIC1, #EnglandPIC2,#EnglandPIC3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("England.jpg");
 } 
 
-div[con=PolandPIC] {
+#PolandPIC1,#PolandPIC2 ,#PolandPIC3  {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Poland.jpg");
 }
 
-div[con=SpainPIC] {
+#SpainPIC1,#SpainPIC2,#SpainPIC3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Spain.jpg");
 }
 
-div[con=NetherlandsPIC] {
+#NetherlandsPIC1,#NetherlandsPIC2,#NetherlandsPIC3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Netherlands.jpg");
 }
 
-div[con=ArgentinaPIC] {
+#ArgentinaPIC1,#ArgentinaPIC2,#ArgentinaPIC3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Argentina.jpg");
 }
 
-div[con=BrazilPIC] {
+#BrazilPIC1, #BrazilPIC2,#BrazilPIC3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Brazil.jpg");
 }
 
