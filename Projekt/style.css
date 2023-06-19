@@ -96,6 +96,7 @@ html {
     background-size: cover;
     position: relative;
     height: 70vh;
+    min-height: 600px;
 }
 
 #MainPIC1,#MainPIC2,#MainPIC3{
